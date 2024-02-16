@@ -1,6 +1,10 @@
+'use client';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function RegisterPage() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   return (
     <section className='mt-8'>
       <h1 className='text-center text-primary text-4xl'>Register</h1>
